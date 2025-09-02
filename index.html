@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Structure Extractor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>JSON Structure Tool</h2>
+  
+  <textarea id="jsonInput" placeholder="Paste JSON here"></textarea>
+  <br>
+  <input type="file" id="fileInput" accept=".json">
+  <button onclick="processJSON()">Convert</button>
+  <button onclick="copyOutput()">Copy</button>
+  <button onclick="downloadOutput()">Download</button>
+  
+  <h3>Output:</h3>
+  <pre id="jsonOutput"></pre>
+  
+  <h3>History</h3>
+  <ul id="historyList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
